@@ -1,0 +1,2 @@
+curl -d '{"max_health": {"value": 1.1}, "min_borrow_value_in_eth": { "value": "1" }, "page_size": 1000}' https://api.compound.finance/api/v2/account
+
