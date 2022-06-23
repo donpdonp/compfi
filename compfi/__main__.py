@@ -1,11 +1,8 @@
 import argparse
-
+import compfi.cmds.approve
 
 def liquidate_borrow():
     print
-
-def approve(x):
-    print(x)
 
 def main():
     main_parser = argparse.ArgumentParser(description='compound.finance tool')
@@ -16,7 +13,7 @@ def main():
     lb_parser.set_defaults(func=liquidate_borrow)
 
     ap_parser = cmd_parser.add_parser('approve', help='call approve')
-    ap_parser.set_defaults(func=approve)
+    ap_parser.set_defaults(func=compfi.cmds.approve.go)
     ap_parser.add_argument("addr")
 
     args = main_parser.parse_args()
