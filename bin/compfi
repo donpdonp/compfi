@@ -1,1 +1,4 @@
-python3 -m compfi $* 
+SCRIPT=$(readlink -f "$0")
+SCRIPTPATH1=$(dirname "$SCRIPT")
+SCRIPTPATH=$(dirname "$SCRIPTPATH1")
+PYTHONPATH=$SCRIPTPATH python3 -m compfi $*
