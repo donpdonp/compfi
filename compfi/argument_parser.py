@@ -11,7 +11,7 @@ def build():
     lb_parser.set_defaults(func=liquidate_borrow.go)
 
     ap_parser = cmd_parser.add_parser("approve", help="call approve")
-    ap_parser.set_defaults(func=approve.go)
     ap_parser.add_argument("addr")
+    ap_parser.set_defaults(func=approve.go)
 
     return main_parser
