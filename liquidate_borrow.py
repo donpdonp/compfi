@@ -24,7 +24,7 @@ try:
   opts = {"from": config['me_pub'], 
           "value": web3.toWei(0.1, 'ether'),
           "gas": 100000,
-          "gasPrice": web3.toWei(5000, 'gwei'),
+          "gasPrice": web3.toWei(10000, 'gwei'),
         }
   print(opts)
   # txn_hash = go.transact(opts)
