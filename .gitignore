@@ -1,3 +1,6 @@
+/build
+/compfi.egg-info
+/dist
 /compound-config
 /tmp
 /config.json
